@@ -369,6 +369,8 @@ summary {
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>Loading and preprocessing the data</h2>
 <p>Let´s set the global options. We set the option cache = TRUE to avoid compiling all the code chunks again and again. The plots are goint to be placed in the Figure folder.</p>
+<pre class="r"><code>library(knitr)
+opts_chunk$set(echo = TRUE, cache = TRUE, fig.path = &quot;Figure/&quot;)</code></pre>
 <p>Set the working directory and read the .csv file</p>
 <pre class="r"><code>setwd(&quot;~/3. Personal/JHU - Data Science/5. Reproducible Research/Assignment week 2/RepData_PeerAssessment1&quot;)
 activity &lt;- read.csv(&quot;activity.csv&quot;)</code></pre>

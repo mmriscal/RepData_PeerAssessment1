@@ -11,6 +11,10 @@ output:
 Let´s set the global options. We set the option cache = TRUE to avoid compiling all the code chunks again and again. The plots are goint to
 be placed in the Figure folder.
 
+```r
+library(knitr)
+opts_chunk$set(echo = TRUE, cache = TRUE, fig.path = "Figure/")
+```
 Set the working directory and read the .csv file
 
 ```r
